@@ -71,7 +71,7 @@ def simPoints(simData):
     print(sum(total_eout))
     return
 
-trainer.load_models(1400)
+trainer.load_models(4800)
 fig = plt.figure()
 ax = fig.add_subplot(111)
 #line, = ax.plot([], [], 'bo', ms=10)
