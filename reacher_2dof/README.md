@@ -1,2 +1,2 @@
-![](pics/reacher-2d-1.gif)
+![](pics/without_obstacles.gif)
 ![](pics/with_obstacles.gif)
