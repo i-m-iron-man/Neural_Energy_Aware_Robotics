@@ -1,0 +1,46 @@
+<mujoco model="reacher">
+    <compiler angle="radian" inertiafromgeom="auto"/>
+    <default>
+        <joint armature="0.01" damping="0.1" limited="true" frictionloss="0.5"/>
+        <geom friction="0.1 0.1 0.1" rgba="0.7 0.7 0 1" condim="3" density="10" solref="0.01 1.1"/>
+    </default>
+    <option gravity="0 0 -9.81" integrator="RK4" timestep="0.01" noslip_iterations="5"/>
+    <worldbody>
+        <!-- Arena -->
+        <geom conaffinity="1" contype="0" condim="3" name="ground" pos="0 0 0" rgba="0.9 0.9 0.9 1" size="5 5 10" type="plane"/>
+        <geom contype="0" fromto="-2 -2 .1 2 -2 .1" name="sideS" rgba="0.9 0.4 0.6 1" size=".2" type="capsule"/>
+        <geom contype="0" fromto=" 2 -2 .1 2  2 .1" name="sideE" rgba="0.9 0.4 0.6 1" size=".2" type="capsule"/>
+        <geom contype="0" fromto="-2  2 .1 2  2 .1" name="sideN" rgba="0.9 0.4 0.6 1" size=".2" type="capsule"/>
+        <geom contype="0" fromto="-2 -2 .1 -2 2 .1" name="sideW" rgba="0.9 0.4 0.6 1" size=".2" type="capsule"/>
+
+        <!-- Arm -->
+        <geom conaffinity="0" contype="0" fromto="0 0 0 0 0 0.4" name="root" rgba="0.9 0.4 0.6 1" size=".11" type="cylinder"/>
+        <body name="body0" pos="0 0 .2">
+            <geom conaffinity="0" contype="1" fromto="0 0 0 0.75 0 0" name="link0" rgba="0.0 0.4 0.6 1" size=".1" type="capsule"/>
+            <joint axis="0 0 1" limited="false" name="joint0" pos="0 0 0" type="hinge"/>
+            <body name="fingertip" pos="0.85 0 0">
+                <geom conaffinity="0" contype="1" name="fingertip" pos="0 0 0" rgba="0.0 0.8 0.6 1" size=".1" type="sphere"/>
+            </body>
+        </body>
+        <!-- Target -->
+        <body name="target" pos="-0.85 -0 .2">
+            <site type="sphere" size="0.1" rgba="0 0.9 0 1"/>
+        </body>
+        <!--body name="box1" pos="0.5 .5 0.2">
+            <geom name="box1" condim="3" size="0.1 0.1 0.2" type="box" solref="0.01 1.1"/>
+        </body-->
+        <body name="box1" pos=".5 .5 0.2">
+            <joint type="free" limited="false"/>
+            <inertial pos="0 0 0" mass="3" diaginertia="0.0000133 0.0000133 0.0000133"/>
+            <geom name="box1" condim="3" size="0.1 0.1 0.2" rgba="0.9 0 0 1" type="box"/>
+        </body>
+        <body name="box2" pos=".5 -.5 0.2">
+            <joint type="free" limited="false"/>
+            <inertial pos="0 0 0" mass="4" diaginertia="0.0000133 0.0000133 0.0000133"/>
+            <geom name="box2" condim="3" size="0.1 0.1 0.2" rgba="0 0 0.9 1" type="box"/>
+        </body>
+    </worldbody>
+    <actuator>
+        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="3.0" joint="joint0"/>
+    </actuator>
+</mujoco>
