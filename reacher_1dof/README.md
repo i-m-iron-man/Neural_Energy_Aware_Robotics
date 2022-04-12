@@ -1,1 +1,1 @@
-![](imgs/sensor.gif)
+![](imgs/reacher_1dof.gif)
