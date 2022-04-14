@@ -17,9 +17,9 @@ The goal was not to outperform state of the art RL algorithms hence the [DDPG al
 ### How to run
 After cloning and installing the dependencies, run the learn.py python file to start learning
 ```bash
-#learning without boxes
 python3 learn.py
-
-# learning with boxes
-python3 learn.py --boxes
+```
+After training is complete the learned policy can be tested using te infer.py program as:
+```bash
+python3 infer.py
 ```
