@@ -6,14 +6,14 @@ This framework also links the virtual energy methodology to [homeostatic reinfor
 
 ## How to run
 First, install dependencies. Use `Python >= 3.8`:
-'''bash
+```bash
 # clone project   
 git clone https://github.com/i-m-iron-man/Neural_Energy_Aware_Robotics.git   
 
 # install dependencies   
 cd Neural_Energy_Aware_Robotics/ 
 pip install -r requirements.txt
-'''
+```
 Next, go to the respective sub directory to run the experiments
 
 
