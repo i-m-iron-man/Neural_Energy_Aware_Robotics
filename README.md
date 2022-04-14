@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 Next, please go to the respective sub directory to run the experiments and read about them.
 
-##Citation
+## Citation
 If you use the code for academic or commecial use, please cite the associated thesis:
 ```bibtex
 @mastersthesis{chaturvedi2021dynamic,
