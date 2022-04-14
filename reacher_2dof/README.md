@@ -11,7 +11,7 @@ Energy tank is initialized at 7J in the beginning of each trial. Maximum permiss
 The energy flowing in depends on the change in distance between the end effector of the robot and the target.
 
 ### RL framework
-The state space used for learning includes
-```$S_t=[cos(q_{1,t})\,cos(q_{2,t})\,sin(q_{1,t})\,sin(q_{2,t})\, \dot{q}_{1,t} \, \dot{q}_{2,t} \, X^{tar}_t \, Y^{tar}_t \, X^{EE}_t \, Y^{EE}_t \, E_t \, E^{out,1}_t \,  E^{out,2}_t \,  E^{in}_t]^T$```
+The state space used for learning includes $`S_t=[cos(q_{1,t})\,cos(q_{2,t})\,sin(q_{1,t})\,sin(q_{2,t})\, \dot{q}_{1,t} \, \dot{q}_{2,t} \, X^{tar}_t \, Y^{tar}_t \, X^{EE}_t \, Y^{EE}_t \, E_t \, E^{out,1}_t \,  E^{out,2}_t \,  E^{in}_t]^T`$.
+
 `
 The goal was not to outperform state of the art RL algorithms hence the [DDPG algorithm](https://arxiv.org/abs/1509.02971) was emperically selected with hyper parameters 
