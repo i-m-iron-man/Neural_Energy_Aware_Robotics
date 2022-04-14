@@ -6,7 +6,7 @@ This framework also links the virtual energy methodology to [homeostatic reinfor
 
 <!-- 
 <p align="center">
-  <img src="framework.PNG" width="48"/>
+  <img src="framework.PNG" width="24"/>
 </p> -->
 ![](framework.PNG)
 
