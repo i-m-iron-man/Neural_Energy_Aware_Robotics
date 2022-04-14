@@ -8,7 +8,7 @@ This framework also links the virtual energy methodology to [homeostatic reinfor
 <p align="center">
   <img src="framework.PNG" />
 </p> -->
-![](framework.PNG)
+![](framework.PNG {width=40px height=40px})
 
 ## How to run
 First, install dependencies. Use `Python >= 3.8`:
