@@ -14,6 +14,17 @@ git clone https://github.com/i-m-iron-man/Neural_Energy_Aware_Robotics.git
 cd Neural_Energy_Aware_Robotics/ 
 pip install -r requirements.txt
 ```
-Next, go to the respective sub directory to run the experiments
+Next, please go to the respective sub directory to run the experiments and read about them.
+
+##Citation
+If you use the code for academic or commecial use, please cite the associated thesis:
+```bibtex
+@mastersthesis{chaturvedi2021dynamic,
+  title={Dynamic energy budgeting using potential-based reward function},
+  author={Chaturvedi, SS},
+  year={2021},
+  school={University of Twente}
+}
+```
 
 
