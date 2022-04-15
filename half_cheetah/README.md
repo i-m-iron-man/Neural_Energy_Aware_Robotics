@@ -8,5 +8,12 @@ The technique used here also improves training results in case of infinite horiz
 
 ![](imgs/cheetah.gif)
 
-### Reward Function
+### How to run
+After cloning and installing the dependencies, run the main.py python file to start learning
+```bash
+python3 main.py
+```
+After training is complete the learned policy can be tested using te infer.py program as:
+```bash
+python3 infer.py
 
