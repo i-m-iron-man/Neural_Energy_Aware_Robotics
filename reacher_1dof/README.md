@@ -20,7 +20,7 @@ The state space and action space for RL algorithm is similar to experiment 1. Th
 More details can be viewed in the section 5 of the [thesis](http://essay.utwente.nl/88729/1/Chaturvedi_MA_EEMCs.pdf).
 
 ## How to run
-After cloning and installing the dependencies, run the learn.py python file to start learning
+After cloning and installing the dependencies, run the main.py python file to start learning
 ```bash
 python3 main.py
 ```
